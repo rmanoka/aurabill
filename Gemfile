@@ -45,3 +45,6 @@ end
 
 gem 'foundation-rails'
 gem 'haml-rails'
+
+gem 'devise'
+

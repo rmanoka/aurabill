@@ -1,0 +1,30 @@
+
+= javascript_tag do
+  window.items =
+  = raw @item.sub_items.to_json(:only => [ :id ])
+  
+
+.row
+  .large-12.columns
+    %h1.underline
+      = @item.name
+
+
+.items
+  - @item.sub_items.each do |i|
+    .row{:id => "row-#{i.id}"}
+      .large-12.columns.item
+        .panel
+          = render partial: 'item_view', object: i, as: 'item'
+
+.row
+  .large-2.columns
+    %h3.subheader
+      Go back
+  .large-10.columns.item
+    .panel
+      = render partial: 'item_view', object: @item.parent, as: 'item'
+      
+
+    
+        

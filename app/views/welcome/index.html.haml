@@ -1,2 +1,8 @@
-%h1 Welcome to Aura Bill Generator
-%p Find me in app/views/welcome/index.html.erb
+.row
+  .columns.large-12
+    %h1 Aura Bill Generator
+
+.row
+  .columns.large-12
+    = link_to "Main Menu", item_path(Item.where(name: 'Menu').first)
+
