@@ -1,0 +1,75 @@
+%article
+  %h1 Recipient
+  %address
+    %p
+      Vidyasagar<br/>
+      1, Ranjith Road, Kotturpuram<br/>
+      Chennai – 600 085.<br/>
+  %table.meta
+    %tr
+      %th
+        %span Invoice #
+      %td
+        %span 
+          = @invoice.serial_number
+    %tr
+      %th
+        %span Date
+      %td
+        %span 
+          = @invoice.date.strftime("%F")
+    
+  %table.inventory
+    %col
+    %col
+    %col
+    %col
+    %thead
+      %tr
+        %th
+          %span Description
+        %th
+          %span Rate
+        %th
+          %span Quantity
+        %th
+          %span Price
+    %tbody
+      - @invoice.orders.each do |order|
+        %tr
+          %td
+            %span= order.description
+          %td
+            %span= number_to_currency(order.rate)
+          %td
+            %span= order.quantity
+          %td
+            %span= order.rate * order.quantity
+    %tfoot
+      %tr
+        %td
+          %span Total
+        %td
+        %td
+        %td
+          %span 0.00
+   
+  / %table.balance
+  /   %tr
+  /     %th
+  /       %span Total
+  /     %td
+  /       %span{"data-prefix" => ""} $
+  /       %span 600.00
+  /   %tr
+  /     %th
+  /       %span Amount Paid
+  /     %td
+  /       %span{"data-prefix" => ""} $
+  /       %span 0.00
+  /   %tr
+  /     %th
+  /       %span Balance Due
+  /     %td
+  /       %span{"data-prefix" => ""} $
+  /       %span 600.00
