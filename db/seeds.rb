@@ -41,7 +41,7 @@ menu = Item.where(name: 'Menu',
 
 
     
-    tea = Item.where(name: 'Tea',
+    tea = Item.where(name: 'Teaaaa',
                      audio_clip: 'Tea.ogg').first_or_create do |p|
     end
 

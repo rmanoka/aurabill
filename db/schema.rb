@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20150214150714) do
   create_table "items", force: :cascade do |t|
     t.string   "name"
     t.string   "audio_clip"
+    t.string   "image_file"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
