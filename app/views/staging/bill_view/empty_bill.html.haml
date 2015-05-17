@@ -44,7 +44,7 @@
           %td
             %span= order.quantity
           %td
-            %span= order.rate * order.quantity
+            %span= number_to_currency(order.rate * order.quantity)
     %tfoot
       %tr
         %td
