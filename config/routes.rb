@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  
+  namespace :staging do
+    get 'bill_view/empty_bill'
+  end
+
+  resources :invoices
   resources :items
   # get 'welcome/index'
 

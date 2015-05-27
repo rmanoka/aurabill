@@ -1,0 +1,2 @@
+module Staging::BillViewHelper
+end

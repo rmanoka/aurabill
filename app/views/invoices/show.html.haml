@@ -1,0 +1,59 @@
+%h1 Invoice
+
+%article
+  %h1 Recipient
+  %address
+    %p
+      Vidyasagar<br/>
+      1, Ranjith Road, Kotturpuram<br/>
+      Chennai – 600 085.<br/>
+  %table.meta
+    %tr
+      %th
+        %span Invoice #
+      %td
+        %span 
+          = @invoice.id
+    %tr
+      %th
+        %span Date
+      %td
+        %span 
+          = @invoice.created_at.strftime("%F")
+    
+  %table.inventory
+    %col
+    %col
+    %col
+    %col
+    %thead
+      %tr
+        %th
+          %span Description
+        %th
+          %span Price
+        %th
+          %span Qty
+        %th
+          %span Amount
+    %tbody
+      - @invoice.orders.each do |order|
+        %tr
+          %td
+            %span= order.item.name
+          %td
+            %span= display_price_indian(order.item.price)              
+          %td
+            %span= order.quantity
+          %td
+            %span= display_price_indian(order.item.price * order.quantity)
+          - total_amount += order.item.price
+    %tfoot
+      %tr
+        %td
+          %span Total
+        %td
+        %td
+        %td
+          %span= display_price_indian(total_amount)
+
