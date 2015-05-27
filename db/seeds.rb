@@ -23,6 +23,7 @@ menu = Item.where(name: 'Menu',
 
     samosa = Item.where(name: 'Samosa',
                         audio_clip: 'Samosa.ogg').first_or_create do |p|
+      p.price = 8.00
     end
     ItemRelationship.create(item: p, sub_item: samosa)
     
@@ -37,7 +38,8 @@ menu = Item.where(name: 'Menu',
     coffee = Item.where(name: 'Coffee',
                         audio_clip: 'Coffee.ogg').first_or_create do |p|
     end
-
+    coffee.price = 10.00
+    coffee.save
 
 
     
@@ -90,4 +92,18 @@ end
   # -> Coffee, Tea, Soft Drinks
 
 
+inv = Invoice.create
 
+inv.orders.new do |o|
+  o.quantity = 5
+  o.item = Item.where(name: "Coffee").first
+  o.save
+end 
+
+inv.orders.new do |o|
+  o.quantity = 10
+  o.item = Item.where(name: "Samosa").first
+  o.save
+end 
+
+inv.save

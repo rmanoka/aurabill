@@ -29,6 +29,9 @@ ActiveRecord::Schema.define(version: 20150516123434) do
     t.string   "name"
     t.string   "audio_clip"
     t.string   "image_file"
+
+    t.decimal  "price", :precision => 10, :scale => 2
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
