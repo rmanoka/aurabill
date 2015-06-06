@@ -1,5 +1,5 @@
 - if item.present?
-  %h2
+  %h2.centered
     = link_to (item.name), item
-  = audio_tag(item.audio_clip, controls: true)
+  = audio_tag(item.audio_clip, controls: false)
 

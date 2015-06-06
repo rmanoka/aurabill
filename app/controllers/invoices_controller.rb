@@ -13,7 +13,9 @@ class InvoicesController < ApplicationController
     end
 
     def new
-        @invoice = Invoice.new
+        @invoice = Invoice.create
+        session[:current_invoice] = @invoice.id
+        respond_with(@invoice)
     end
 
   private

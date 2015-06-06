@@ -3,11 +3,12 @@
 *
 {
 	border: 0;
+	box-sizing: content-box;
 	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
 	font-style: inherit;
-	font-weight: inherit;`
+	font-weight: inherit;
 	line-height: inherit;
 	list-style: none;
 	margin: 0;
@@ -17,7 +18,7 @@
 }
 
 /* content editable */
-/*
+
 *[contenteditable] { border-radius: 0.25em; min-width: 1em; outline: 0; }
 
 *[contenteditable] { cursor: pointer; }
@@ -25,7 +26,7 @@
 *[contenteditable]:hover, *[contenteditable]:focus, td:hover *[contenteditable], td:focus *[contenteditable], img.hover { background: #DEF; box-shadow: 0 0 1em 0.5em #DEF; }
 
 span[contenteditable] { display: inline-block; }
-*/
+
 /* heading */
 
 h1 { font: bold 100% sans-serif; letter-spacing: 0.5em; text-align: center; text-transform: uppercase; }
@@ -33,11 +34,19 @@ h1 { font: bold 100% sans-serif; letter-spacing: 0.5em; text-align: center; text
 /* table */
 
 table { font-size: 75%; table-layout: fixed; width: 100%; }
-table { border-collapse: collapse; border-spacing: 2px; }
-th, td { padding: 0.5em; position: relative; text-align: left; }
-
+table { border-collapse: separate; border-spacing: 2px; }
+th, td { border-width: 1px; padding: 0.5em; position: relative; text-align: left; }
+th, td { border-radius: 0.25em; border-style: solid; }
+th { background: #EEE; border-color: #BBB; }
+td { border-color: #DDD; }
 
 /* page */
+
+html { font: 16px/1 'Open Sans', sans-serif; overflow: auto; padding: 0.5in; }
+html { background: #999; cursor: default; }
+
+body { box-sizing: border-box; height: 11in; margin: 0 auto; overflow: hidden; padding: 0.5in; width: 8.5in; }
+body { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); }
 
 /* header */
 
@@ -74,33 +83,12 @@ table.meta td { width: 60%; }
 
 table.inventory { clear: both; width: 100%; }
 table.inventory th { font-weight: bold; text-align: center; }
-table.inventory thead tr { border-bottom: 1pt solid; }
 
-
-table.inventory {
-
-	col:nth-child(1) { width: 64%; }
-	col:nth-child(2) { width: 12%;}
-	col:nth-child(3) { width: 12%}		
-	col:nth-child(4) { width: 12%;}
-
-	td, th { 
-		border-right: 1pt solid; 
-		:last-child { border-right: 0pt; }
-	} 
-	td:last-child {border-right: 0pt;}
-	th:last-child {border-right: 0pt;}
-
-	tbody {
-		td:nth-child(2),td:nth-child(3),td:nth-child(4) {text-align: right; padding-right: 1em;}
-	}
-
-	tfoot {
-		td { font-weight: bold; text-align: right; padding-right: 1em;}
-	}
-}
-
-
+table.inventory td:nth-child(1) { width: 26%; }
+table.inventory td:nth-child(2) { width: 38%; }
+table.inventory td:nth-child(3) { text-align: right; width: 12%; }
+table.inventory td:nth-child(4) { text-align: right; width: 12%; }
+table.inventory td:nth-child(5) { text-align: right; width: 12%; }
 
 /* table balance */
 

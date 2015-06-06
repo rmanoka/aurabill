@@ -20,7 +20,13 @@ class ItemsController < ApplicationController
   end
 
   def show
-    respond_with(@item)
+    if (@item.sub_items.length == 0) 
+      invoice_id = session[:current_invoice_id]
+      @invoice = Invoice.where(id: invoice_id).first
+      redirect_to root_path
+    else
+      respond_with(@item)
+    end
   end
 
 
