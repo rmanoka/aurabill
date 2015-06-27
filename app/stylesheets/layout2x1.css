@@ -1,0 +1,194 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/_body_style.scss */
+body {
+  position: relative;
+  width: 720px;
+  height: 535px;
+  background-color: #EFEEEE;
+  border: 2pt ridge;
+  overflow: hidden;
+}
+
+/* line 17, ../sass/_body_style.scss */
+h1 {
+  display: block;
+  margin-top: 10pt;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24;
+  font-family: Arial;
+}
+
+/* line 26, ../sass/_body_style.scss */
+h2 {
+  font-size: 18;
+}
+
+/* line 30, ../sass/_body_style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 7, ../sass/_menu_frame.scss */
+.frame {
+  /*
+    border-color: black;
+    border-width: 1pt;
+    border-style: solid;
+  */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 19, ../sass/_menu_frame.scss */
+.frame .menu-frame {
+  padding-top: 3%;
+  padding-bottom: 2%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-grow: 10;
+  flex-grow: 10;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 30, ../sass/_menu_frame.scss */
+.frame .option-box {
+  width: 40%;
+  height: 321px;
+  text-align: center;
+  vertical-align: text-top;
+  display: block;
+  /* non-flexbox browsers */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  border-color: black;
+  border-width: 1pt;
+  border-radius: 5pt;
+  border-style: solid;
+  background-color: #FFFFFF;
+  color: inherit;
+  margin: 2%;
+  padding: 2%;
+}
+/* line 53, ../sass/_menu_frame.scss */
+.frame .option-box .image-box {
+  max-width: 80%;
+}
+/* line 59, ../sass/_menu_frame.scss */
+.frame .footer-frame {
+  padding-bottom: 1%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+/* line 64, ../sass/_menu_frame.scss */
+.frame .footer-frame .option-box {
+  height: 53.5px;
+  padding-bottom: 5.35px;
+  padding-top: 5.35px;
+}
+
+/* line 72, ../sass/_menu_frame.scss */
+.option-box.selected {
+  background-color: #5F4F8F;
+  color: #FFFFFF;
+}
+
+/* line 12, ../sass/layout2x1.scss */
+.option-box {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 16, ../sass/layout2x1.scss */
+.image-box {
+  max-height: 240.75px;
+}

@@ -1,0 +1,33 @@
+@import "compass/reset";
+@import "compass/css3";
+
+$body-width:    720px !default;
+$body-height:   535px !default;
+$body-color:    #EFEEEE !default;
+
+body {
+  position: relative;
+  width: $body-width;
+  height: $body-height;
+  background-color: $body-color;
+  border: 2pt ridge;
+  overflow: hidden;
+}
+
+h1 {
+  display: block;
+  margin-top: 10pt;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24;
+  font-family: Arial;
+}
+
+h2 {
+  font-size: 18;
+}
+
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    

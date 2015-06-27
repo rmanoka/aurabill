@@ -1,0 +1,71 @@
+
+.paper
+
+  .invoice-header
+
+    .address
+      .logo
+        %img{:src => "app/logo.jpg"}      
+      .text
+        %p
+          Vidyasagar
+          %br
+          No. 1, Ranjit Road,
+          %br
+          Kotturpuram, 
+          %br
+          Chennai - 600 085.
+
+    .invoice-details
+      %table.details        
+        %tbody
+          %tr
+            %td Invoice No.
+            %td.ralign= @invoice.id
+          %tr
+            %td Date
+            %td.ralign= @invoice.date
+      
+  .inventory-table
+    %table.inventory
+      %col
+      %col
+      %col
+      %col
+      - total = 0
+      %thead
+        %tr
+          %th
+            %span Description
+          %th
+            %span Rate
+          %th
+            %span Qty
+          %th
+            %span Price
+      %tbody
+        
+        - for item in @invoice.items
+          %tr
+            %td
+              %span= item.name
+            %td
+              %span= @format_rupees(item.price)
+            %td
+              %span= item.quantity
+            %td
+              %span= @format_rupees(item.price * item.quantity)
+          - total = total + item.price * item.quantity
+        %tfoot
+          %tr
+            %td
+              %span Total
+            %td
+            %td
+            %td
+              %span &#8377;
+              %span= @format_rupees(total)
+       
+
+.foot-menu
+  %h1 Press to continue

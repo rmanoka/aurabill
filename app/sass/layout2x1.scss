@@ -1,0 +1,18 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 'body_style';
+
+$item-width:    40%;
+$item-height:   0.6*$body-height;
+@import 'menu_frame';
+
+.option-box {
+  @include flex-direction(column);
+}
+
+.image-box {
+  max-height: 0.75*$item-height;
+}
