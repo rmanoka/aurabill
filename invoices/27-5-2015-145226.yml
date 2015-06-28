@@ -1,0 +1,15 @@
+id: '145226'
+date: 27-5-2015
+items:
+  - name: Coffee
+    price: 10
+    quantity: 2
+  - name: Brownie
+    price: 50
+    quantity: 1
+  - name: Smile
+    price: 10000
+    quantity: 1
+  - name: Potato Cheese Shots
+    price: 50
+    quantity: 3

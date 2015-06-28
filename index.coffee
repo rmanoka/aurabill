@@ -12,6 +12,7 @@ app.on 'ready', ->
   # mainWindow.openDevTools
   mainWindow.setMenu null
   mainWindow.openDevTools true
+  mainWindow.setKiosk true
   mainWindow.on 'closed', ->
     mainWindow = null
 

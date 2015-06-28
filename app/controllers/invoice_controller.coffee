@@ -16,55 +16,37 @@ class NewInvoiceController extends DOMController
   for key, val of StateMachine
     @::[key] = val
 
-  INVOICE_SCREEN  = 'invoice_screen'
+  INVOICE_SCREEN  = "invoice_screen"
   ITEM_MENU       = "item_menu"
   QUANTITY_MENU   = "quantity_menu"
   CONTINUE_MENU   = "continue_menu"
 
-  constructor: (@root_element) ->
+  constructor: (@root_element, @invoice) ->
     super @root_element
     stack.push @
 
-    @invoice = 
-      id: 1001
-      date: 'June 10, 2015'
-      items: [
-        name: 'Coffee'
-        price: 10.00
-        quantity: 2
-      ,
-        name: 'Brownie'
-        price: 50.00
-        quantity: 1
-      ,
-        name: 'Smile'
-        price: 10000.00
-        quantity: 1
-      ,
-        name: 'Brownie'
-        price: 50.00
-        quantity: 1
-      ,
-        name: 'Smile'
-        price: 10000.00
-        quantity: 1
-      ,
-        name: 'Brownie'
-        price: 50.00
-        quantity: 1
-      ,
-        name: 'Smile'
-        price: 10000.00
-        quantity: 1
-      ,
-        name: 'Brownie'
-        price: 50.00
-        quantity: 1
-      ,
-        name: 'Smile'
-        price: 10000.00
-        quantity: 1
-      ]
+    d = new Date()
+    date_string = d.getDate() + '-'
+    date_string += d.getMonth() + '-' + d.getFullYear()
+
+    id_string = "" + d.getHours() + d.getMinutes() + d.getSeconds()
+    if not @invoice?
+      @invoice = 
+        'id': id_string
+        'date': date_string
+        'items': [
+          'name': 'Coffee'
+          'price': 10.00
+          'quantity': 2
+        ,
+          'name': 'Brownie'
+          'price': 50.00
+          'quantity': 1
+        ,
+          'name': 'Smile'
+          'price': 10000.00
+          'quantity': 1
+        ]
 
     @state(INVOICE_SCREEN)
     return
@@ -100,9 +82,6 @@ class NewInvoiceController extends DOMController
         @state CONTINUE_MENU
 
       when CONTINUE_MENU
-        console.log('invoice_controller: in state CONTINUE_MENU,\n')
-        console.log('  menu_item = ')
-        console.log(menu_item)        
         if not menu_item?
           @state INVOICE_SCREEN
         else
@@ -110,8 +89,10 @@ class NewInvoiceController extends DOMController
             when 'add_item'
               @state ITEM_MENU
             when 'print'
-              @state INVOICE_SCREEN
-
+              return stack.pop {
+                'invoice': @invoice
+              }
+              
       when ITEM_MENU
         if not menu_item?
           @state CONTINUE_MENU

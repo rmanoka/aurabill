@@ -10,9 +10,11 @@ class Humbill
 
 
     @app_dir = path.join @root_dir, 'app'
+    @audio_dir = path.join @app_dir, 'audio'
     @views_dir = path.join @app_dir, 'views'
     @layouts_dir = path.join @views_dir, 'layouts'
     @controllers_dir = path.join @app_dir, 'controllers'
+    @invoices_dir = path.join @root_dir, 'invoices'
     @css_base = 'app/stylesheets/'
 
 

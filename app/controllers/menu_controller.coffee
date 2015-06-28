@@ -1,6 +1,10 @@
 stack = global.Humbill.Controllers.stack
 $     = global.$
 
+Speaker = require ('speaker')
+fs = require 'fs'
+
+
 
 class Timer
   constructor: (interval=1000, @message) ->    
@@ -12,6 +16,16 @@ class Timer
   reset: () ->
     clearInterval(@timer)
 
+class Timeout extends Timer
+  constructor: (interval=1000, @message) ->
+    @timeout = setTimeout (() => @ticker()), interval
+    return
+
+  reset: () ->
+    clearTimeout(@timeout)
+
+
+
 class ClickController
   constructor: (@element, @message) ->
     $(@element).click(() => 
@@ -20,15 +34,24 @@ class ClickController
 
 
 class ChoiceController
-  constructor: (@elements, root, interval = 1000) ->
+  constructor: (@elements, @root, interval = 1000) ->
     stack.push @
-    @timer = new Timer(interval, {
+    @done = false
+    @interval = interval
+    @timer = new Timeout(interval, {
         'shift': true
       })
     @currIndex = -1
-    new ClickController(root, {
+    new ClickController(@root, {
       'choose': true
     })
+
+  play_audio: (file) ->    
+    @speaker = new Speaker()
+    @speaker.write(fs.readFileSync(path.join Humbill.audio_dir, file), null, 
+      () =>
+        if not @done
+          @set_shift_timer())        
     
   shift: () ->
     $(@elements[@currIndex]).removeClass "selected"  if (@currIndex != -1)
@@ -39,13 +62,26 @@ class ChoiceController
 
     $(@elements[@currIndex]).addClass "selected"
 
+    if (a = $(@elements[@currIndex]).data().audio)
+      @play_audio(a)
+    else
+      @set_shift_timer()
+    
+  set_shift_timer: () ->
+    @timer = new Timeout(@interval, {
+      'shift': true
+    })
+
+
   choose: () ->
-    return unless (@currIndex >=0 && @currIndex < @elements.length)
+    return new ClickController(@root, {
+      'choose': true
+    }) unless (@currIndex >=0 && @currIndex < @elements.length)
+    @done = true
     @timer.reset()
     stack.pop {
       option: $(@elements[@currIndex]).data().option
     }
-    $(root).off('click')
 
 
 path = require 'path'
@@ -63,9 +99,7 @@ class MenuController extends DOMController
 
   option: (opt) ->
     if (opt == '_back')
-      console.log('menu_controller: _back received')
       if @menu.root()
-        console.log('menu_controller: root node. popping\n')
         return stack.pop {
           'menu': null
         }
@@ -82,8 +116,25 @@ class MenuController extends DOMController
       @show_menu()
 
   show_menu: () ->
+
+    @choices = []
+    for opt in @menu.options()
+      
+      audio_link = @menu.property(opt)['_audio']? && @menu.property(opt)['_audio']
+      
+      image_link = @menu.property(opt)['_image']? && @menu.property(opt)['_image']
+      if image_link then image_link = "app/images/" + image_link
+
+      @choices.push({
+        'id': opt
+        'name': @menu.property(opt)['_name'] ? opt
+        'audio': audio_link,
+        'image': image_link
+      })
+
     @show_view (path.join 'menu', 'choose.html.hamlc'), {
-      'menu': @menu
+      'choices': @choices
+      'name': @menu.property '_name'
     }
     
     @load_css (@menu.property('_layout') ? 'screen'), true

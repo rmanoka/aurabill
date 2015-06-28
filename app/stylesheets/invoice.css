@@ -66,8 +66,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 8, ../sass/_body_style.scss */
 body {
   position: relative;
-  width: 720px;
-  height: 535px;
+  width: 1066px;
+  height: 600px;
   background-color: #FFFFFF;
   border: 2pt ridge;
   overflow: hidden;
@@ -99,7 +99,7 @@ h2 {
 .paper {
   margin-left: 5%;
   margin-right: 2%;
-  margin-top: 26.75px;
+  margin-top: 30px;
 }
 /* line 11, ../sass/invoice.scss */
 .paper .invoice-header {

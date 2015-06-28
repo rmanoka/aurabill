@@ -1,14 +1,16 @@
 
 .frame  
   .title-frame
-    %h1 = @menu.property '_name'
+    %h1 = @name
   .menu-frame
-    - for opt in @menu.options()
-      .option-box{:data => {:option => "#{opt}",
-                            :cycle => true}}
-        %h2= @menu.property(opt)['_name'] ? opt
-        - if @menu.property(opt)['_image']? && @menu.property(opt)['_image']
-          %img.image-box{:src => "app/images/#{@menu.property(opt)['_image']}"}
+    - for c in @choices
+      .option-box{:data => {:option => c.id,
+                            :cycle => true,
+                            :audio => c.audio}}                            
+        %h2= c.name
+        - if c.image
+          %img.image-box{:src => c.image}
+
   .footer-frame
     .option-box{:data => {:option => "_back",
                           :cycle => true}}

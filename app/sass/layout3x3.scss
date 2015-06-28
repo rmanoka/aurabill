@@ -8,10 +8,15 @@
 @import 'body_style';
 
 $item-width:    25%;
-$item-height:   0.18*$body-height;
+$item-height:   0.25*$body-height;
 @import 'menu_frame';
 
 .image-box {
   max-height: 75%;
   padding-left: 5pt;
+}
+
+.option-box {  
+  margin: 0px;
+  padding: 0px;
 }
