@@ -1,13 +1,11 @@
 path    = require 'path'
 fs      = require 'fs'
 Humbill = require './humbill.coffee'
-$       = global.$
 Humbill.configure path.join __dirname, ".."
 global.Humbill = Humbill
-
+$ = global.$ ?= window.$
 
 require './controllers/app_controller'
-
 $?("document").ready () ->  
   new Humbill.Controllers.AppController()
   # # $?("document").ready (console.log("hi"))

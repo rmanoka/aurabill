@@ -1,5 +1,6 @@
 stack = global.Humbill.Controllers.stack
 $     = global.$
+path  = require 'path'
 DOMController = require './dom_controller.coffee'
 require './menu_controller'
 

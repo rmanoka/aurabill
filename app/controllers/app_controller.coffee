@@ -3,6 +3,7 @@ stack = global.Humbill.Controllers.stack
 require './invoice_controller.coffee'
 yaml = require 'js-yaml'
 fs   = require 'fs'
+path = require 'path'
 
 class AppController
   constructor: () ->
