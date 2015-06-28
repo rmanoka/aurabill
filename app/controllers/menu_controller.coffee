@@ -1,7 +1,7 @@
 stack = global.Humbill.Controllers.stack
 $     = global.$
 
-Speaker = require ('speaker')
+# Speaker = require ('speaker')
 fs = require 'fs'
 
 
@@ -46,12 +46,14 @@ class ChoiceController
       'choose': true
     })
 
-  play_audio: (file) ->    
-    @speaker = new Speaker()
-    @speaker.write(fs.readFileSync(path.join Humbill.audio_dir, file), null, 
-      () =>
-        if not @done
-          @set_shift_timer())        
+  play_audio: (file) ->
+    @set_shift_timer()
+    return 
+    # @speaker = new Speaker()
+    # @speaker.write(fs.readFileSync(path.join Humbill.audio_dir, file), null, 
+    #   () =>
+    #     if not @done
+    #       @set_shift_timer())        
     
   shift: () ->
     $(@elements[@currIndex]).removeClass "selected"  if (@currIndex != -1)
