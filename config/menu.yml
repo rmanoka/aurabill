@@ -7,7 +7,8 @@ Menu:
   QuickBites:
     _name: 'Quick Bites'
     _layout: 'layout3x3'
-    _image: "quick_bites.jpg"    
+    _image: "quick_bites.jpg" 
+    _audio: 'quick_bites.wav'  
 
     FrenchFries:
       _name: 'French Fries'
@@ -59,7 +60,8 @@ Menu:
 
   Drinks:
     _image: '400x400white.png'
-    _layout: 'layout2x2'    
+    _layout: 'layout2x2' 
+    _audio: 'drinks.wav'   
 
     CoffeeTea:
       _name: 'Coffee / Tea'
@@ -117,14 +119,16 @@ Menu:
     AddItem:
       _name: 'Add another item'
       _image: false
+      _audio: 'add_more_items.wav'
       _option: 'add_item'
     _ShowInvoice:
       _name: 'Show Invoice'
       _image: false
       _option: 'show'
     PrintInvoice:
-      _name: 'Print and Save Invoice'
+      _name: 'Print and Save Bill'
       _image: false
+      _audio: 'print_bill.wav'
       _option: 'print'
 
 
