@@ -4,7 +4,37 @@ $     = global.$
 # Speaker = require ('speaker')
 fs = require 'fs'
 
+audio_context = new window.AudioContext()
 
+
+class GetRequest
+  constructor: (url) ->
+    @request = new window.XMLHttpRequest()
+    @request.open("GET", url, true)
+    @request.responseType = 'arraybuffer'
+
+    @request.onload = () =>
+      @respond()
+    @request.send()
+
+  respond: () ->
+
+class AudioPlayer extends GetRequest
+  constructor: (url, @message) ->
+    super url
+  respond: () ->
+    @decoded_data = null
+    @source = audio_context.createBufferSource()
+    audio_context.decodeAudioData(
+      @request.response, 
+      (buffer) =>
+        @source.buffer = buffer        
+        @decoded_data = buffer
+        @source.connect audio_context.destination
+        @source.onended = () =>
+          stack.send @message
+        @source.start 0
+    )
 
 class Timer
   constructor: (interval=1000, @message) ->    
@@ -46,9 +76,13 @@ class ChoiceController
       'choose': true
     })
 
-  play_audio: (file) ->
-    @set_shift_timer()
-    return 
+  play_audio: (url) ->
+    #@set_shift_timer()
+    new AudioPlayer(Humbill.audio_base + url, {
+      'set_shift_timer': true
+      })
+
+
     # @speaker = new Speaker()
     # @speaker.write(fs.readFileSync(path.join Humbill.audio_dir, file), null, 
     #   () =>
@@ -70,6 +104,7 @@ class ChoiceController
       @set_shift_timer()
     
   set_shift_timer: () ->
+    return if @done
     @timer = new Timeout(@interval, {
       'shift': true
     })
@@ -82,7 +117,7 @@ class ChoiceController
     @done = true
     @timer.reset()
     stack.pop {
-      option: $(@elements[@currIndex]).data().option
+      'option': $(@elements[@currIndex]).data().option
     }
 
 
@@ -146,3 +181,9 @@ class MenuController extends DOMController
     
 Humbill.Controllers["MenuController"] = MenuController
 Humbill.Controllers.ClickController = ClickController
+
+
+
+
+window.GetRequest = GetRequest
+window.AudioPlayer = AudioPlayer

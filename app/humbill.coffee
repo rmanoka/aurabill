@@ -16,6 +16,7 @@ class Humbill
     @controllers_dir = path.join @app_dir, 'controllers'
     @invoices_dir = path.join @root_dir, 'invoices'
     @css_base = 'app/stylesheets/'
+    @audio_base = '/app/audio/'
 
 
   @Models = 
