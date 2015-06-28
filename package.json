@@ -8,12 +8,13 @@
   },
 
   "window": {
+    "title": "Aura Bill Generator",
     "toolbar": false,
     "frame": true,
     "position": "center",
     "width": 640,
     "height": 480,
-    "icon": "app/logo.jpg"
+    "icon": "app://aurabill/app/logo.jpg"
   },
   "author": "",
   "license": "ISC",
