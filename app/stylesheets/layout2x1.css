@@ -70,8 +70,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 8, ../sass/_body_style.scss */
 body {
   position: relative;
-  width: 1066px;
-  height: 600px;
+  width: 640px;
+  height: 480px;
   background-color: #EFEEEE;
   border: 2pt ridge;
   overflow: hidden;
@@ -117,8 +117,8 @@ h2 {
 }
 /* line 19, ../sass/_menu_frame.scss */
 .frame .menu-frame {
-  padding-top: 12.6px;
-  padding-bottom: 8.4px;
+  padding-top: 10.08px;
+  padding-bottom: 6.72px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -135,7 +135,7 @@ h2 {
 /* line 30, ../sass/_menu_frame.scss */
 .frame .option-box {
   width: 40%;
-  height: 420px;
+  height: 336px;
   text-align: center;
   vertical-align: text-top;
   display: block;
@@ -154,12 +154,12 @@ h2 {
   color: inherit;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 8.4px;
-  margin-bottom: 8.4px;
+  margin-top: 6.72px;
+  margin-bottom: 6.72px;
   padding-left: 2%;
   padding-right: 2%;
-  padding-top: 8.4px;
-  padding-bottom: 8.4px;
+  padding-top: 6.72px;
+  padding-bottom: 6.72px;
 }
 /* line 60, ../sass/_menu_frame.scss */
 .frame .option-box .image-box {
@@ -177,9 +177,9 @@ h2 {
 }
 /* line 71, ../sass/_menu_frame.scss */
 .frame .footer-frame .option-box {
-  height: 60px;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  height: 48px;
+  padding-bottom: 4.8px;
+  padding-top: 4.8px;
 }
 
 /* line 79, ../sass/_menu_frame.scss */
@@ -196,5 +196,5 @@ h2 {
 
 /* line 16, ../sass/layout2x1.scss */
 .image-box {
-  max-height: 315px;
+  max-height: 252px;
 }

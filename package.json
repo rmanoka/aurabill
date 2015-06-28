@@ -8,11 +8,11 @@
   },
 
   "window": {
-    "toolbar": true,
+    "toolbar": false,
     "frame": true,
     "position": "center",
-    "width": 1066,
-    "height": 600,
+    "width": 640,
+    "height": 480,
     "icon": "app/logo.jpg"
   },
   "author": "",

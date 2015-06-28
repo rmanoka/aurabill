@@ -36,6 +36,11 @@ class AudioPlayer extends GetRequest
         @source.start 0
     )
 
+  stop: () ->
+    @source?.onended = null
+    @source?.stop()
+
+
 class Timer
   constructor: (interval=1000, @message) ->    
     @timer = setInterval (() => @ticker()), interval
@@ -78,7 +83,7 @@ class ChoiceController
 
   play_audio: (url) ->
     #@set_shift_timer()
-    new AudioPlayer(Humbill.audio_base + url, {
+    @audio = new AudioPlayer(Humbill.audio_base + url, {
       'set_shift_timer': true
       })
 
@@ -116,6 +121,7 @@ class ChoiceController
     }) unless (@currIndex >=0 && @currIndex < @elements.length)
     @done = true
     @timer.reset()
+    @audio?.stop()
     stack.pop {
       'option': $(@elements[@currIndex]).data().option
     }
