@@ -45,7 +45,7 @@ class NewInvoiceController extends DOMController
           'quantity': 1
         ,
           'name': 'Smile'
-          'price': 10000.00
+          'price': 100000.00
           'quantity': 1
         ]
 

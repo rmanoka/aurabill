@@ -4,7 +4,7 @@
   "description": "Aura Bill Generator",
   "main": "app://aurabill/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Test free coding ftw!\" && exit 1"
   },
 
   "window": {
