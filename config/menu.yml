@@ -22,6 +22,12 @@ Menu:
       _price: 50.00
       _audio: 'potato_wedges.wav'
 
+    Brownies:
+      _name: 'Brownies'
+      _image: 'brownie.jpg'
+      _price: 100.00
+      _audio: 'french_fries.wav'
+
     PotatoCheese:
       _name: 'Potato Cheese Shots'
       _image: 'potato_cheese.jpg'
@@ -35,7 +41,7 @@ Menu:
       _audio: false        
 
     VadaPaav:
-      _name: 'Vada Paav'
+      _name: 'Vadaa Paav'
       _image: 'vada_paav.jpg'
       _price: 50.00
       _audio: 'vada_paav.wav'

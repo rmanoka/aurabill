@@ -2,7 +2,8 @@
   "name": "aurabill",
   "version": "1.0.0",
   "description": "Aura Bill Generator",
-  "main": "app://aurabill/index.html",
+  "main": "/index.html",
+  "chromium-args": "--mixed-context",
   "scripts": {
     "test": "echo \"Test free coding ftw!\" && exit 1"
   },
@@ -14,7 +15,7 @@
     "position": "center",
     "width": 640,
     "height": 480,
-    "icon": "app://aurabill/app/logo.jpg"
+    "icon": "/app/logo.jpg"
   },
   "author": "",
   "license": "ISC",

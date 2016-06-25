@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"audio",
+				"audio_context"
+			],
+			[
 				"continu",
 				"continue_menu"
 			],
@@ -163,7 +167,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 532,
+				"buffer_size": 564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.js",
+			"settings":
+			{
+				"buffer_size": 158,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,15 +191,7 @@
 			"file": "app/sass/_body_style.scss",
 			"settings":
 			{
-				"buffer_size": 558,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.coffee",
-			"settings":
-			{
-				"buffer_size": 466,
+				"buffer_size": 557,
 				"line_ending": "Unix"
 			}
 		},
@@ -195,8 +199,17 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 660,
+				"buffer_size": 622,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 608,
+				"line_ending": "Unix",
+				"name": "# Aura Bill Generator"
 			}
 		},
 		{
@@ -219,7 +232,7 @@
 			"file": "app/controllers/app_controller.coffee",
 			"settings":
 			{
-				"buffer_size": 527,
+				"buffer_size": 549,
 				"line_ending": "Unix"
 			}
 		},
@@ -227,7 +240,7 @@
 			"file": "app/controllers/invoice_controller.coffee",
 			"settings":
 			{
-				"buffer_size": 2836,
+				"buffer_size": 2860,
 				"line_ending": "Unix"
 			}
 		},
@@ -251,7 +264,15 @@
 			"file": "config/menu.yml",
 			"settings":
 			{
-				"buffer_size": 2679,
+				"buffer_size": 2796,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rajsekar/.config/gnome-session/sessions/gnome.session",
+			"settings":
+			{
+				"buffer_size": 1477,
 				"line_ending": "Unix"
 			}
 		},
@@ -259,7 +280,7 @@
 			"file": "app/app.coffee",
 			"settings":
 			{
-				"buffer_size": 654,
+				"buffer_size": 658,
 				"line_ending": "Unix"
 			}
 		},
@@ -283,7 +304,15 @@
 			"file": "app/controllers/menu_controller.coffee",
 			"settings":
 			{
-				"buffer_size": 3248,
+				"buffer_size": 4308,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 60,
 				"line_ending": "Unix"
 			}
 		},
@@ -291,7 +320,7 @@
 			"file": "app/humbill.coffee",
 			"settings":
 			{
-				"buffer_size": 769,
+				"buffer_size": 801,
 				"line_ending": "Unix"
 			}
 		},
@@ -343,8 +372,8 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 1100.0,
-		"last_filter": "",
+		"height": 665.0,
+		"last_filter": "comm",
 		"selected_items":
 		[
 			[
@@ -583,6 +612,9 @@
 	],
 	"file_history":
 	[
+		"/home/rajsekar/work/code/gusBill/node_modules/coffee-script/README.md",
+		"/home/rajsekar/work/code/gusBill/index.coffee",
+		"/home/rajsekar/work/code/gusBill/index.js",
 		"/home/rajsekar/work/code/gusBill/node_modules/speaker/deps/mpg123/mpg123.gyp",
 		"/home/rajsekar/work/code/gusBill/app/sass/layout2x2.scss",
 		"/home/rajsekar/work/code/gusBill/app/controllers/controller.coffee",
@@ -612,7 +644,6 @@
 		"/home/rajsekar/work/code/gusBill/app/old_controllers/dom_controller.coffee",
 		"/home/rajsekar/work/code/gusBill/app/controllers/base.coffee",
 		"/home/rajsekar/work/code/gusBill/app/test.js",
-		"/home/rajsekar/work/code/gusBill/index.coffee",
 		"/home/rajsekar/work/code/gusBill/app/index.js",
 		"/home/rajsekar/work/code/gusBill/app/controllers/controller_stack.coffee",
 		"/home/rajsekar/work/code/gusBill/app/views/menu/choose.html.hamlc",
@@ -627,7 +658,6 @@
 		"/home/rajsekar/work/code/gusBill/libs/controllers/sample_window.js",
 		"/home/rajsekar/work/code/gusBill/libs/controllers/show_menu.coffee",
 		"/home/rajsekar/work/code/gusBill/libs/index.coffee",
-		"/home/rajsekar/work/code/gusBill/index.js",
 		"/home/rajsekar/work/code/gusBill/libs/index.js",
 		"/home/rajsekar/work/code/gusBill/app.coffee",
 		"/home/rajsekar/work/code/gusBill/libs/humbill.coffee",
@@ -709,6 +739,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"AudioPla",
+			"play_audio",
+			"path",
 			"%",
 			"speaker",
 			"audio",
@@ -756,7 +789,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 13,
 			"sheets":
 			[
 				{
@@ -765,15 +798,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 532,
+						"buffer_size": 564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								349,
-								349
+								124,
+								124
 							]
 						],
 						"settings":
@@ -786,11 +819,39 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "app/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "app/sass/invoice.scss",
 					"semi_transient": false,
 					"settings":
@@ -802,8 +863,8 @@
 						"selection":
 						[
 							[
-								2001,
-								2001
+								1986,
+								1986
 							]
 						],
 						"settings":
@@ -812,28 +873,28 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 3605.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/sass/_body_style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 558,
+						"buffer_size": 557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								101,
+								101
 							]
 						],
 						"settings":
@@ -846,35 +907,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								381,
-								381
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -883,15 +916,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 660,
+						"buffer_size": 622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								236,
-								236
+								122,
+								122
 							]
 						],
 						"settings":
@@ -904,11 +937,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								608,
+								608
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# Aura Bill Generator",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "app/sass/_menu_frame.scss",
 					"semi_transient": false,
 					"settings":
@@ -934,11 +996,11 @@
 						"translation.y": 1824.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "app/views/invoice/new.html.hamlc",
 					"semi_transient": false,
 					"settings":
@@ -964,24 +1026,24 @@
 						"translation.y": 1938.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "app/controllers/app_controller.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 527,
+						"buffer_size": 549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								423,
-								423
+								145,
+								145
 							]
 						],
 						"settings":
@@ -994,24 +1056,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "app/controllers/invoice_controller.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2836,
+						"buffer_size": 2860,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								563,
-								563
+								960,
+								960
 							]
 						],
 						"settings":
@@ -1020,15 +1082,15 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 244.0,
+						"translation.x": -0.0,
+						"translation.y": 798.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "app/test.coffee",
 					"semi_transient": false,
 					"settings":
@@ -1054,11 +1116,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "app/test-sound.js",
 					"semi_transient": false,
 					"settings":
@@ -1082,24 +1144,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "config/menu.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2679,
+						"buffer_size": 2796,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2555,
-								2555
+								1333,
+								1333
 							]
 						],
 						"settings":
@@ -1109,27 +1171,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3415.0,
+						"translation.y": 1140.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "app/app.coffee",
+					"buffer": 13,
+					"file": "/home/rajsekar/.config/gnome-session/sessions/gnome.session",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 654,
+						"buffer_size": 1477,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
+								1476,
+								1476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2774.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/app.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
 							]
 						],
 						"settings":
@@ -1140,11 +1230,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 15,
 					"file": "app/controllers/controller.coffee",
 					"semi_transient": false,
 					"settings":
@@ -1170,11 +1260,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 16,
 					"file": "app/controllers/dom_controller.coffee",
 					"semi_transient": false,
 					"settings":
@@ -1200,24 +1290,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 17,
 					"file": "app/controllers/menu_controller.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3248,
+						"buffer_size": 4308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1649,
-								1649
+								896,
+								896
 							]
 						],
 						"settings":
@@ -1227,27 +1317,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2144.0,
+						"translation.y": 798.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "app/humbill.coffee",
+					"buffer": 18,
+					"file": "index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 769,
+						"buffer_size": 60,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								510,
-								510
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/humbill.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								588,
+								588
 							]
 						],
 						"settings":
@@ -1260,11 +1378,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 20,
 					"file": "app/models/menu.coffee",
 					"semi_transient": false,
 					"settings":
@@ -1290,11 +1408,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 21,
 					"file": "app/sass/layout2x1.scss",
 					"semi_transient": false,
 					"settings":
@@ -1318,11 +1436,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 22,
 					"file": "app/sass/layout2x2.scss",
 					"semi_transient": false,
 					"settings":
@@ -1346,11 +1464,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 23,
 					"file": "app/sass/layout3x3.scss",
 					"semi_transient": false,
 					"settings":
@@ -1374,11 +1492,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 24,
 					"file": "app/views/menu/choose.html.hamlc",
 					"semi_transient": false,
 					"settings":
@@ -1404,7 +1522,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 22,
 					"type": "text"
 				}
 			]
@@ -1463,8 +1581,68 @@
 		"selected_items":
 		[
 			[
+				"invoice",
+				"app/controllers/invoice_controller.coffee"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"read",
+				"node_modules/coffee-script/README.md"
+			],
+			[
+				"body",
+				"app/sass/_body_style.scss"
+			],
+			[
+				"menu_con",
+				"app/controllers/menu_controller.coffee"
+			],
+			[
+				"men",
+				"config/menu.yml"
+			],
+			[
 				"menu",
 				"app/controllers/menu_controller.coffee"
+			],
+			[
+				"hum",
+				"app/humbill.coffee"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"app/inde",
+				"app/index.js"
+			],
+			[
+				"indx.c",
+				"index.coffee"
+			],
+			[
+				"index.js",
+				"index.js"
+			],
+			[
+				"app_c",
+				"app/controllers/app_controller.coffee"
+			],
+			[
+				"invoi",
+				"app/controllers/invoice_controller.coffee"
+			],
+			[
+				"app.co",
+				"app/app.coffee"
+			],
+			[
+				"index.",
+				"index.html"
 			],
 			[
 				"contro",
@@ -1473,10 +1651,6 @@
 			[
 				"app",
 				"app/app.coffee"
-			],
-			[
-				"invoi",
-				"app/controllers/invoice_controller.coffee"
 			],
 			[
 				"_m",
@@ -1495,28 +1669,12 @@
 				"app/sass/layout3x3.scss"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
-				"body",
-				"app/sass/_body_style.scss"
-			],
-			[
-				"invoice",
-				"app/sass/invoice.scss"
-			],
-			[
 				"inde",
 				"index.coffee"
 			],
 			[
 				"index",
 				"index.html"
-			],
-			[
-				"hum",
-				"app/humbill.coffee"
 			],
 			[
 				"app_",
@@ -1547,20 +1705,8 @@
 				"app/test-sound.js"
 			],
 			[
-				"men",
-				"config/menu.yml"
-			],
-			[
 				"choo",
 				"app/views/menu/choose.html.hamlc"
-			],
-			[
-				"menu_con",
-				"app/controllers/menu_controller.coffee"
-			],
-			[
-				"app.co",
-				"app/app.coffee"
 			],
 			[
 				"bod",
@@ -1569,10 +1715,6 @@
 			[
 				"",
 				"app/sass/_body_style.scss"
-			],
-			[
-				"packa",
-				"package.json"
 			],
 			[
 				"index.co",

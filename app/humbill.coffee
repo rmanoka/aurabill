@@ -16,13 +16,13 @@ class Humbill
     @controllers_dir = path.join @app_dir, 'controllers'
     @invoices_dir = path.join @root_dir, 'invoices'
     @css_base = 'app/stylesheets/'
-    @audio_base = '/app/audio/'
+    @audio_base = 'app/audio/'
 
 
   @Models = 
-    Menu: require './models/menu.coffee'
+    Menu: require 'app/models/menu.coffee'
 
-  ControllerStack = require './controllers/controller'
+  ControllerStack = require 'app/controllers/controller'
   _stack = new ControllerStack()
 
   @Controllers = 
