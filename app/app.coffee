@@ -1,13 +1,13 @@
 path    = nw.require 'path'
 fs      = nw.require 'fs'
 
-Humbill = nw.require 'app/humbill.coffee'
+Humbill = nw.require './app/humbill.coffee'
 Humbill.configure ""
 global.Humbill = Humbill
 $ = global.$ ?= window.$
 
 
-nw.require 'app/controllers/app_controller'
+nw.require './app/controllers/app_controller'
 $?("document").ready () ->  
   new Humbill.Controllers.AppController()
   # # $?("document").ready (console.log("hi"))

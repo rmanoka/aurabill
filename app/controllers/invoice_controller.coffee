@@ -36,20 +36,20 @@ class NewInvoiceController extends DOMController
         'id': id_string
         'date': date_string
         'items': [
-          'name': 'Coffee'
-          'price': 10.00
-          'quantity': 2
-        ,
-          'name': 'Brownie'
-          'price': 50.00
-          'quantity': 1
-        ,
-          'name': 'Smile'
-          'price': 100000.00
-          'quantity': 1
+        #   'name': 'Coffee'
+        #   'price': 10.00
+        #   'quantity': 2
+        # ,
+        #   'name': 'Brownie'
+        #   'price': 50.00
+        #   'quantity': 1
+        # ,
+        #   'name': 'Smile'
+        #   'price': 100000.00
+        #   'quantity': 1
         ]
 
-    @state(INVOICE_SCREEN)
+    @state(ITEM_MENU)
     return
 
   invoice_screen: () ->

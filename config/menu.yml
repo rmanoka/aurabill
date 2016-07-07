@@ -1,91 +1,35 @@
-# This file contains the menu description (in YAML)
-# Please see the example below for the sytanx (fairly simple)
-
 ---
 Menu:
-  _layout: 'layout2x1'
-  QuickBites:
-    _name: 'Quick Bites'
-    _layout: 'layout3x3'
-    _image: "quick_bites.jpg" 
-    _audio: 'quick_bites.wav'  
+  _layout: 'layout2x3'
+  12_inch_plate:
+    _name: 12_inch_plate
+    _image: 12_inch_plate.jpg
+    _audio: 12_inch_plate.wav
+    _price: 20.00
 
-    FrenchFries:
-      _name: 'French Fries'
-      _image: 'french_fries.jpg'
-      _price: 50.00
-      _audio: 'french_fries.wav'
+  10_inch_plate:
+    _name: 10_inch_plate
+    _image: 10_inch_plate.jpg
+    _audio: 10_inch_plate.wav
+    _price: 20.00
+  4_inch_saucer:
+    _name: 4_inch_saucer
+    _image: 4_inch_saucer.jpg
+    _audio: 4_inch_saucer.wav
+    _price: 20.00
+  8_by_7_inch_plate:
+    _name: 8_by_7_inch_plate
+    _image: 8_by_7_inch_plate.jpg
+    _audio: 8_by_7_inch_plate.wav
+    _price: 20.00
+  3_inch_cup:
+    _name: 3_inch_cup
+    _image: 3_inch_cup.jpg
+    _audio: 3_inch_cup.wav
+    _price: 20.00
 
-    Wedges:
-      _name: 'Potato Wedges'
-      _image: 'wedges.jpg'
-      _price: 50.00
-      _audio: 'potato_wedges.wav'
 
-    Brownies:
-      _name: 'Brownies'
-      _image: 'brownie.jpg'
-      _price: 100.00
-      _audio: 'french_fries.wav'
 
-    PotatoCheese:
-      _name: 'Potato Cheese Shots'
-      _image: 'potato_cheese.jpg'
-      _price: 50.00
-      _audio: 'potato_cheese_shots.wav'
-
-    Burger:
-      _name: 'Cheese Burger'
-      _image: 'burger.jpg'
-      _price: 50.00
-      _audio: false        
-
-    VadaPaav:
-      _name: 'Vadaa Paav'
-      _image: 'vada_paav.jpg'
-      _price: 50.00
-      _audio: 'vada_paav.wav'
-
-    Sandwich:
-      _name: 'Cole Saw Sandwich'
-      _image: 'cole_saw_sandwich.jpg'
-      _price: 50.00
-      _audio: 'cole_saw_sandwich.wav'
-
-    VegGrilled:
-      _name: 'Veg Grilled Sandwich'
-      _image: 'veg_grilled_sandwich.jpg'
-      _price: 50.00
-      _audio: 'grilled_vegetable_sandwich.wav'
-
-    Brownie:
-      _name: 'Brownie'
-      _image: 'brownie.jpg'
-      _price: 50.00
-      _audio: 'desserts.wav'
-
-  Drinks:
-    _image: '400x400white.png'
-    _layout: 'layout2x2' 
-    _audio: 'drinks.wav'   
-
-    CoffeeTea:
-      _name: 'Coffee / Tea'
-      _image: 'coffee_tea.jpg'
-      _price: 10.00
-      _audio: 'tea.wav'
-
-    Mocktails:
-      _name: 'Mocktails'
-      _image: 'mocktails.jpg'
-      _price: 15.00
-      _audio: 'mocktails.wav'
-
-    ChocolateShake:
-      _name: 'Chocolate Milk Shake'
-      _image: 'chocolate_milk_shake.jpg'
-      _price: 20.00
-      _audio: 'chocolate_milk_shake.wav'
 
   _Qty:
     _root: true
@@ -136,6 +80,3 @@ Menu:
       _image: false
       _audio: 'print_bill.wav'
       _option: 'print'
-
-
-
